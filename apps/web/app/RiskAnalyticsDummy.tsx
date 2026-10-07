@@ -785,7 +785,7 @@ export default function RiskAnalyticsDummy() {
 
               <PostureItem
                 label="Avg Entity Risk"
-                value={`${averageRisk}`}
+                value={averageRisk}
               />
 
               <PostureItem
