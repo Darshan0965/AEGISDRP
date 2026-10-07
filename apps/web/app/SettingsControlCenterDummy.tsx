@@ -1407,7 +1407,8 @@ export default function SettingsControlCenterDummy() {
                 ["MEDIUM", "40 – 59", "#facc15", 59],
                 ["HIGH", "60 – 79", "#fb923c", 79],
                 ["CRITICAL", "80 – 100", "#ff6472", 100],
-              ].map(([name, range, color, value]) => (
+              ].map(([name, range, color, value]:
+                    [string, string, string, number]) => (
                 <div key={name}>
                   <div
                     style={{
@@ -1994,7 +1995,8 @@ export default function SettingsControlCenterDummy() {
                 ["Audit Logs", "365 DAYS", 98, "#a78bfa"],
                 ["Authentication", "180 DAYS", 95, "#4ade80"],
                 ["System Telemetry", "90 DAYS", 87, "#facc15"],
-              ].map(([name, days, value, color]) => (
+              ].map(([name, days, value, color]:
+                    [string, string, number, string]) => (
                 <div
                   key={name}
                   style={{
